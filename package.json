@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "env-cmd -f .env.stage vite",
+    "dev": "vite",
     "build:stage": "env-cmd -f .env.stage vite build",
+    "build:prod": "env-cmd -f .env.prod vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
